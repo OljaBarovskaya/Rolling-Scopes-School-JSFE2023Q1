@@ -3,6 +3,7 @@
 Here are the links on RSS course projects that had been done while studiying:
 1. ## Shelter
   https://oljabarovskaya.github.io/Rolling-Scopes-School-JSFE2023Q1/shelter/pages/main/  
+  
 2. ## Minesweeper
   https://oljabarovskaya.github.io/Rolling-Scopes-School-JSFE2023Q1/minesweeper/index.html
   It's a copy of a classic minesweeper. The goal of this game is try to find all the mines that are hidden in the field by opening the cells and marking the expected mines with red flag. The numbers in the cells show the amount of mines that are located around the cell. The game ends either when the user opens all the safe cells (he wins the game) or when he presses the cell with the mine (he loses the game).
