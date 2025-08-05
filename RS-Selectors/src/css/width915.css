@@ -1,0 +1,105 @@
+@media only screen and (max-width: 915px)  {
+  .container {
+    max-width: 915px; 
+}
+
+.level {
+  flex-direction:column-reverse;
+}
+
+.level__right-part {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+    max-width: 768px;
+    column-gap: 0%;
+    width: 100%; 
+}
+
+  .left-column {
+    width: calc(100%*0.9);
+    background-color: darkgray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .right-column {
+    width: calc(100%*0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 1px;
+  }
+
+  .level__right-part {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+
+  .level__left-part {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger-menu {
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .level-number {
+    font-size: 18px;
+    border: none;
+  }
+ 
+  .task-to-do {
+    font-size: 25px;
+  }
+
+  .table-img {
+    width: 400px;
+    
+  }
+
+  .table {
+    width: 400px;
+    top: 40px;
+  }
+
+  .code-panel {
+    font-size: 12px;
+    width: 100%;
+    border-right: 1px solid dimgrey;
+  }
+
+  .line-number {
+    padding: 3px;
+  }
+
+  .css-selector-input {
+    font-size: 10px;
+  }
+
+  .button-enter {
+    padding: 1px 5px;
+    font-size: 12px;
+  }
+
+  .task-field {
+    height: 150px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+}

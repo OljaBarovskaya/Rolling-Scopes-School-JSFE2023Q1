@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+p, 
+div, 
+h1, 
+h2, 
+h3 {
+margin: 0px;
+}
+
+body {
+  max-height: 100vh;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: dimgray;
+  font-family: "Exo 2", "Lato", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 2%;
+  width: 100%; 
+}
+
+.left-column {
+width: calc((100% - 2%)*0.7);
+background-color: darkgray;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.right-column {
+width: calc((100% - 2%)*0.3);
+background-color: dimgray;
+height: 100vh;
+padding: 20px;
+}
+
+.header {
+height: 42px;
+padding: 11px; 
+border: 1px solid navajowhite;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+font-size: 16px;
+}
+
+.left-side-block {
+display: flex;
+align-items: center;
+}
+
+.header__plate {
+width: 30px;
+height: 30px;
+}
+
+.header__apple {
+width: 15px;
+height: 15px;
+}
+
+h1 {
+font-size: 16px;
+font-weight: 400;
+margin: 0;
+}
+
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.task-to-do {
+font-family: "Exo 2", "Lato", "Helvetica Neue", sans-serif;
+font-size: 45px;
+padding: 20px 30px;
+text-align: center;
+}
+
+.task-field {
+height: 182px;
+position: relative;
+}
+
+.code-panel {
+border: 9.6px solid dimgray;
+height: 495px;
+max-height: calc(100vh - 42px - 92px - 182px - 50px);
+width: 90%;
+display: flex;
+justify-content: space-between;
+font-family: menlo, monospace;
+font-size: 14px;
+}
+
+.code-panel__block {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.code-panel__block-name {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+font-size: 14px;
+line-height: 150%;
+}
+
+.code-panel__block-name p {
+opacity: .5;
+}
+
+.code-panel__block-body {
+display: flex;
+height: 100%;
+} 
+
+.line-number {
+padding: 10px;
+}
+
+.line-number_color_beige {
+background-color: bisque;
+}
+
+.line-number_color_darkgray {
+background-color: dimgray;
+}
+
+.code-panel__block-contents{
+flex-grow: 2;
+padding: 5px 3px;
+overflow: auto;
+}
+
+.code-panel__block-contents_color_white {
+background-color: white;
+}
+
+.code-panel__block-contents_color_darkgray{
+background-color: dimgray;
+}
+
+.code-panel__hints {
+color: #AAAAAA;
+font-size: 13px;
+}
+
+.css-selector-input {
+display: inline;
+background-color: white;
+width: calc(100% - 60px);
+border: none;
+animation-name: change-input-color; 
+animation-duration: .7s;
+animation-iteration-count: infinite;
+}
+
+@keyframes change-input-color { 
+from {background-color: white;} 
+to {background-color: rgb(166, 246, 246);} 
+}  
+
+.button {
+width: 50px;
+box-shadow: 3px 3px 2px darkgray;
+}
+
+.button-enter {
+display: inline;
+}
+
+.right-column__level{
+margin-bottom: 20px;
+}
+
+.footer {
+width: 725px;
+height: 50px;
+font-size: 16px;
+display: flex;
+align-items: center;
+}
+
+.add-information {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 200px;
+margin: 0 auto;
+}
+
+.footer__img {
+height: 35px;
+}
+
+.level {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.level-number {
+font-size: 25px;
+padding-right: 3px;
+border-bottom: 1px solid black;
+}
+
+.level__right-part,
+.level__left-part {
+display: flex;
+align-items: center;
+}
+
+.level__right-part {
+justify-content: space-between;
+}
+
+.pagination {
+font-size: 50px;
+padding: 5px;
+}
+
+.level__left-part img {
+width: 22px;
+height: 22px;
+}
+
+.level__burger-menu {
+margin-left: 20px;
+}
+
+.burger-menu {
+width: 32px;
+height: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.burger-menu span{
+width: 32px;
+height: 1.5px;
+background-color: black;
+}
+
+.pagination:hover {
+color: rgb(237, 149, 41);
+}
+
+.burger-menu:hover, 
+.pagination:hover{
+cursor: pointer;
+}
+
+.button-enter:hover {
+background-color: rgb(237, 149, 41);
+}
+
+.checkmark{
+width: 20px;
+height: 20px;
+background-size: cover;
+display: inline-block;
+}
+
+.checkmark_color_grey {
+background-image: url(./img-css/checkmark.png);
+}
+
+.checkmark_color_green {
+background-image: url(./img-css/checkmark-green.png);
+}
+
+.checkmark_color_blue {
+
+  background-image: url(./img-css/checkmark-blue.png);
+}
+
+.message{
+  position: absolute;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  background-color: #ffe4c4;
+  border: 1px solid black;
+  padding: 20px;
+}
+

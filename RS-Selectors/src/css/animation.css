@@ -1,0 +1,75 @@
+/*https://bloggood.ru/recepty-css/animaciya-pokachivanie-swing-teksta-ili-izobrazheniya-pri-navedenii-myshi.html/ */
+
+@-webkit-keyframes swing {
+  20% {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg);
+  }
+  
+  40% {
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+  transform: rotate3d(0, 0, 1, -10deg);
+  }
+  
+  60% {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+  transform: rotate3d(0, 0, 1, 5deg);
+  }
+  
+  80% {
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  
+  100% {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  }
+  
+  @keyframes swing {
+  20% {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  -ms-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg);
+  }
+  
+  40% {
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+  -ms-transform: rotate3d(0, 0, 1, -10deg);
+  transform: rotate3d(0, 0, 1, -10deg);
+  }
+  
+  60% {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+  -ms-transform: rotate3d(0, 0, 1, 5deg);
+  transform: rotate3d(0, 0, 1, 5deg);
+  }
+  
+  80% {
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  -ms-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  
+  100% {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  -ms-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  }
+  
+  .animation-swing {
+    animation: 1s infinite both swing;
+    -webkit-animation: 1s infinite both swing;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    transition-property: margin-top;
+    transition-duration: 0.3s;
+  }
+
+ .animation-swing-away {
+  margin-top: -1000px;
+ }
+

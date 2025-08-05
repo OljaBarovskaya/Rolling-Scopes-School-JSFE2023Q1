@@ -1,0 +1,84 @@
+.table-img {
+  width: 500px; 
+  position: relative; 
+  top: -30px;
+}
+
+.table {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+plate,
+wipers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover
+}
+
+wipers {
+  background-image: url(../img-css/wiper.png);
+  z-index: 2;
+  width: 120px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+plate {
+  background-image: url(../img-css/plate.png);
+  z-index: 4;
+  width: 98px;
+  height: 98px;
+}
+
+wipers > plate {
+  margin-top: -30px;
+}
+
+apple,
+pear,
+cherries {
+  width: 30px;
+  height: 34px;
+  display: block;
+  background-size: cover;
+}
+
+orange.big {
+  width: 53px;
+  height: 68px;
+  margin-bottom: 10px;
+}
+
+.big {
+  width: 50px;
+  height: 58px;
+}
+
+apple {
+  background-image: url(../img-css/apple.png); 
+}
+
+pear {
+  background-image: url(../img-css/pear.png); 
+}
+
+orange {
+  background-image: url(../img-css/orange.png); 
+  width: 30px;
+  height: 40px;
+  display: block;
+  background-size: cover;
+}
+
+cherries {
+  background-image: url(../img-css/cherries.png); 
+}
+
+

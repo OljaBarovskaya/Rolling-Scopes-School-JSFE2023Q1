@@ -1,0 +1,56 @@
+.side-menu {
+  width: calc((100% - 2%)*0.3);
+  min-width: 350px;
+  background-color: dimgray;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  transition-property: all; 
+  transition-duration: 0.3s; 
+  display: none;
+}
+
+.side-menu_right {
+  right: calc((100% - 2%)*0.3*(-1));
+}
+
+.side-menu__heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: 1px solid lightpink;
+}
+
+.close-button {
+  width:45px;
+}
+
+.levels-list{
+  padding-left: 0px;
+  overflow: auto;
+}
+
+.levels-list__item {
+  list-style-type: none;
+}
+
+.levels-list img {
+  width: 18px;
+}
+
+.task-description {
+  display: inline-block;
+  padding: 5px;
+}
+
+.levels-list__item:hover {
+  color: rgb(237, 149, 41);
+}
+
+.close-button:hover,
+.levels-list__item:hover {
+  cursor: pointer;
+}
