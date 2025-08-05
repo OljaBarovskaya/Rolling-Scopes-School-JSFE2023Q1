@@ -140,18 +140,18 @@
   }
 
   .lower-section_ten {
-    width: calc(24px * 10 + 2px);
-    height: calc(24px * 10 + 2px);
+    width: calc(24.01px * 10 + 2.2px);
+    height: calc(24.01px * 10 + 2.2px);
   }
 
   .lower-section_fifteen {
-    width: calc(24px * 15 + 2px);
-    height: calc(24px * 15 + 2px);
+    width: calc(24.01px * 15 + 2.2px);
+    height: calc(24.01px * 15 + 2.2px);
   }
 
   .lower-section_twenty-five{
-    width: calc(24px * 25 + 2px);
-    height: calc(24px * 25 + 2px);
+    width: calc(24.01px * 25 + 2.2px);
+    height: calc(24.01px * 25 + 2.2px);
   }
 
   .lower-section_light {
@@ -274,3 +274,10 @@
     background-image: url(assets/img/sound_off.png);
     background-size: contain;
   }
+
+@media (max-width: 850px) {
+
+  .message-game-result  { 
+    font-size: 18px;
+  }
+}
