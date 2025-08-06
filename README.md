@@ -14,5 +14,9 @@ The main options of an app are:
   - The cell is opened with the left-click
   - The cell is pointed with red flag with the right click
   - To restart the game, please press <img width="25" height="25" alt="emoji" src="https://github.com/user-attachments/assets/95ed62ec-df2d-4722-99df-fc6bcf0bff35" />
+
+3. ## RS-Selectors
+   https://oljabarovskaya.github.io/Rolling-Scopes-School-JSFE2023Q1/RS-Selectors/
+   It's an app that helps to train css selectors. Just type the selector according to the task and press 'enter'. 
  
     
