@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+
+header{
+    padding: 20px 20px 0px 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+header,
+main {
+    max-width: 1920px;
+    margin: auto;
+} 
+
+h1 {
+    display: inline-block;
+}
+
+.generate-cars {
+    display: inline-block;
+}
+
+.car-container {
+    padding-top: 10px;
+    border-bottom: 1px dashed sandybrown;
+    position: relative;
+}
+
+.start,
+.stop {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-color: sandybrown;
+    margin-top: 5px;
+}
+
+.start {
+    background-image: url(./public/play.png);
+}
+
+.stop {
+    background-image: url(./public/stop.png);
+}
+
+.flag {
+    width:40px;
+}
+
+.race-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 135px;
+}
+
+.pagination-block {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.pagination {
+    display: inline-block;
+    border: 1px solid sandybrown;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.pagination:hover {
+    cursor: pointer;
+    background-color: rgba(244, 165, 96, 0.819);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.pagination:disabled{
+    cursor: default;
+    background-color: transparent;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.winner-message{
+    width: 500px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    padding: 14px;
+    position: absolute;
+    background: lightyellow;
+    border: 1px solid rgb(249, 170, 11);
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+table {
+    border: 1px solid rgb(244, 182, 12);
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  
+  td,
+  tr,
+  th {
+    text-align: center;
+    border: 1px solid rgb(244, 182, 12);
+    padding: 10px;
+  }
