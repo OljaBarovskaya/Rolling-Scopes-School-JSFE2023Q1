@@ -260,6 +260,7 @@ class Garage {
     // after creation draw car below the page if currentPage = latestPage is less than 7 cars
       .then((CarData2: CarData): void => {
         const pagesAmount: number = Math.ceil((this.getCarsAmount() + 1) / 7);
+        console.log('pages Amount', pagesAmount);
         if (currentPage === pagesAmount) {
           this.drawCar(CarData2.name, CarData2.color, CarData2.id);
           this.carsOnPage.push(CarData2.id);
@@ -332,6 +333,7 @@ class Garage {
   }
 
   getCarsAmount(): number {
+    console.log('this.carsAmount', this.carsAmount)
     return this.carsAmount;
   }
 

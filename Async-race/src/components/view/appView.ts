@@ -1,6 +1,7 @@
 import cancelCarSelection from '../../helpers/cancelCarSelection';
 import clearCreateInput from '../../helpers/clearCreateInput';
 import Garage from './Garage';
+import Animations from '../animations/animations';
 
 class AppView {
   garage: Garage;
@@ -15,6 +16,8 @@ class AppView {
 
   garagePage: number;
 
+  animation: Animations;
+
   constructor() {
     this.garage = new Garage();
     this.carNameCreateValue = '';
@@ -22,6 +25,7 @@ class AppView {
     this.carNameUpdateValue = '';
     this.carColorUpdateValue = '#0C3AC4';
     this.garagePage = 1;
+    this.animation = new Animations();
   }
 
   createPageNavigationButtons(): void {
@@ -133,6 +137,7 @@ class AppView {
       this.garage.removeCars();
       this.garage.drawCars(this.garagePage);
       cancelCarSelection();
+      this.animation.resetRace(this.garage.carsOnPage);
     });
 
     paginationRight.addEventListener('click', () => {
@@ -148,6 +153,7 @@ class AppView {
       this.garage.removeCars();
       this.garage.drawCars(this.garagePage);
       cancelCarSelection();
+      this.animation.resetRace(this.garage.carsOnPage);
     });
 
     const generateCarsButton = document.querySelector('.generate-cars') as HTMLButtonElement;
